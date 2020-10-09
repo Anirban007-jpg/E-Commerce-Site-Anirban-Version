@@ -7,12 +7,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Manage Brands</h1>
+                        <h1 class="m-0">Manage Product Colors</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active">Brand</li>
+                            <li class="breadcrumb-item active">Product Colors</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -27,8 +27,8 @@
                     <!-- Custom tabs (Charts with tabs)-->
                     <div class="card">
                         <div class="card-header">
-                            <h3>Brand List</h3>
-                            <a class="btn btn-success float-right btn-sm" href="{{route('brands.add')}}"><i class="fa fa-plus-circle"></i>Add Brand</a>
+                            <h3>Product Color List</h3>
+                            <a class="btn btn-success float-right btn-sm" href="{{route('colors.add')}}"><i class="fa fa-plus-circle"></i>Add Product Color</a>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body col-md-12">
@@ -36,19 +36,19 @@
                                 <thead>
                                 <tr>
                                     <th width="6%">SL.</th>
-                                    <th>Brand Name</th>
+                                    <th>Product Color</th>
                                     <th width="12%">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($allData as $key => $brand)
-                                    <tr class="{{$brand->id}}">
+                                @foreach($allData as $key => $color)
+                                    <tr class="{{$color->id}}">
                                         <td>{{$key+1}}</td>
                                         {{--                                        <td><img src="{{!empty($slider->image)?url('public/upload/slider_images/'. $slider->image): url('public/upload/noimage.png')}}" width="120px" height="130px"></td>--}}
-                                        <td>{{$brand->name}}</td>
+                                        <td>{{$color->name}}</td>
                                         <td>
-                                            <a title='Edit' class="btn btn-sm btn-primary" href="{{route('brands.edit', $brand->id)}}"><i class="fa fa-edit"></i> </a>
-                                            <a title='Delete' id='delete' class="btn btn-sm btn-danger" href="{{route('brands.delete', $brand->id)}}"><i class="fa fa-trash"></i> </a>
+                                            <a title='Edit' class="btn btn-sm btn-primary" href="{{route('colors.edit', $color->id)}}"><i class="fa fa-edit"></i> </a>
+                                            <a title='Delete' id='delete' class="btn btn-sm btn-danger" href="{{route('colors.delete', $color->id)}}"><i class="fa fa-trash"></i> </a>
                                         </td>
 
                                     </tr>

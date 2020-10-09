@@ -36,7 +36,7 @@
                                 <thead>
                                 <tr>
                                     <th width="6%">SL.</th>
-                                    <th>Category</th>
+                                    <th>Category Name</th>
                                     <th width="12%">Action</th>
                                 </tr>
                                 </thead>

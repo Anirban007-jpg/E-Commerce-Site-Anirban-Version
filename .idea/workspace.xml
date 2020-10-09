@@ -19,14 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="category Management done. Closes #3">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/BrandController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BrandRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Model/Brand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_071011_create_brands_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/brand/add-brand.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Brand Management done. Closes #4">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ColorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ColorRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Color.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_072927_create_colors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/color/add-color.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/color/view-color.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -182,7 +184,7 @@
       <workItem from="1602087190694" duration="17093000" />
       <workItem from="1602182811788" duration="9000" />
       <workItem from="1602184545058" duration="3761000" />
-      <workItem from="1602219505139" duration="8583000" />
+      <workItem from="1602219505139" duration="9748000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -303,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602226939858</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Brand Management done. Closes #4">
+      <created>1602228295257</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602228295257</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,17 +338,18 @@
     <MESSAGE value="Finetuning Finished Part 1.Closes #1" />
     <MESSAGE value="Garbage files deleted. Closes #2" />
     <MESSAGE value="category Management done. Closes #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="category Management done. Closes #3" />
+    <MESSAGE value="Brand Management done. Closes #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Brand Management done. Closes #4" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602227362707">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602228695209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602227362707" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602226944665">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602228695209" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602228300257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602226944665" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602228300257" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
