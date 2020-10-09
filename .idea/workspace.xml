@@ -19,13 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Color Management done. Closes #5">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductSizeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SizeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Model/Size.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_075026_create_sizes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/size/add-product-size.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/size/view-product-size.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Size Management done. Closes #6">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/ProductColor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/ProductSize.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/ProductSubImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_102955_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_103209_create_product_sizes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_103235_create_product_colors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_103259_create_product_sub_images_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/product/view-product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -182,7 +187,7 @@
       <workItem from="1602087190694" duration="17093000" />
       <workItem from="1602182811788" duration="9000" />
       <workItem from="1602184545058" duration="3761000" />
-      <workItem from="1602219505139" duration="12199000" />
+      <workItem from="1602219505139" duration="15334000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -317,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602229586552</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Size Management done. Closes #6">
+      <created>1602238117771</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1602238117771</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,17 +357,18 @@
     <MESSAGE value="category Management done. Closes #3" />
     <MESSAGE value="Brand Management done. Closes #4" />
     <MESSAGE value="Color Management done. Closes #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Color Management done. Closes #5" />
+    <MESSAGE value="Size Management done. Closes #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Size Management done. Closes #6" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602229859908">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602239344972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602229859908" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602229597409">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602239344972" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602238121871">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602229597409" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602238121871" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
