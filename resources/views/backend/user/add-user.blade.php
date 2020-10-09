@@ -118,94 +118,89 @@
             <!-- /.content-wrapper -->
         </div>
 
-{{--        <script>--}}
-{{--            $(function () {--}}
-{{--                $.validator.setDefaults({--}}
-{{--                    submitHandler: function () {--}}
-{{--                        alert( "Form successful submitted!" );--}}
-{{--                    }--}}
-{{--                });--}}
-{{--                $('#myForm').validate({--}}
-{{--                    rules: {--}}
-{{--                        email: {--}}
-{{--                            required: true,--}}
-{{--                            email: true,--}}
-{{--                        },--}}
-{{--                        name: {--}}
-{{--                            required: true,--}}
+        <script type="text/javascript">
+            $(document).ready(function (){
+                 $('#myForm').validate({
+                    rules: {
+                        email: {
+                            required: true,
+                            email: true,
+                        },
+                        name: {
+                            required: true,
 
-{{--                        },--}}
-{{--                        usertype: {--}}
-{{--                            required: true,--}}
+                        },
+                        usertype: {
+                            required: true,
 
-{{--                        },--}}
-{{--                        gender: {--}}
-{{--                            required: true,--}}
+                        },
+                        gender: {
+                            required: true,
 
-{{--                        },--}}
-{{--                        mobile: {--}}
-{{--                            required: true,--}}
-{{--                            minlength:10,--}}
-{{--                            maxlength:11--}}
-{{--                        },--}}
-{{--                        address: {--}}
-{{--                            required: true,--}}
+                        },
+                        mobile: {
+                            required: true,
+                            minlength:10,
+                            maxlength:11
+                        },
+                        address: {
+                            required: true,
 
-{{--                        },--}}
-{{--                        password: {--}}
-{{--                            required: true,--}}
-{{--                            minlength: 6--}}
-{{--                        },--}}
-{{--                        password2: {--}}
-{{--                            required: true,--}}
-{{--                            equalTo: '#password',--}}
-{{--                        },--}}
-{{--                    },--}}
-{{--                    messages: {--}}
-{{--                        usertype: {--}}
-{{--                            required: "Please enter a user role"--}}
-{{--                        },--}}
-{{--                        name: {--}}
-{{--                            required: "Please enter the name of the user"--}}
-{{--                        },--}}
-{{--                        gender: {--}}
-{{--                            required: "Please enter a user gender"--}}
-{{--                        },--}}
-{{--                        address: {--}}
-{{--                            required: "Please enter a address of the user"--}}
-{{--                        },--}}
-{{--                        mobile: {--}}
-{{--                            required: "Please enter a mobile number",--}}
-{{--                            minlength: "Your mobile number must be greater 10 characters long",--}}
-{{--                            maxlength: "Your mobile number must be less than or equal to 11 characters long"--}}
+                        },
+                        password: {
+                            required: true,
+                            minlength: 6
+                        },
+                        password2: {
+                            required: true,
+                            equalTo: '#password',
+                        },
+                    },
+                    messages: {
+                        usertype: {
+                            required: "Please enter a user role"
+                        },
+                        name: {
+                            required: "Please enter the name of the user"
+                        },
+                        gender: {
+                            required: "Please enter a user gender"
+                        },
+                        address: {
+                            required: "Please enter a address of the user"
+                        },
+                        mobile: {
+                            required: "Please enter a mobile number",
+                            minlength: "Your mobile number must be greater 10 characters long",
+                            maxlength: "Your mobile number must be less than or equal to 11 characters long"
 
-{{--                        },--}}
-{{--                        email: {--}}
-{{--                            required: "Please enter a email address",--}}
-{{--                            email: "Please enter a <em>vaild</em> email address"--}}
-{{--                        },--}}
-{{--                        password: {--}}
-{{--                            required: "Please provide a password",--}}
-{{--                            minlength: "Your password must be at least 6 characters long"--}}
-{{--                        },--}}
-{{--                        password2 : {--}}
-{{--                            required: 'please enter the confirmed password',--}}
-{{--                            equalTo: 'Confirm password do not match'--}}
-{{--                        }--}}
+                        },
+                        email: {
+                            required: "Please enter a email address",
+                            email: "Please enter a <em>vaild</em> email address"
+                        },
+                        password: {
+                            required: "Please provide a password",
+                            minlength: "Your password must be at least 6 characters long"
+                        },
+                        password2 : {
+                            required: 'please enter the confirmed password',
+                            equalTo: 'Confirm password do not match'
+                        }
 
-{{--                    },--}}
-{{--                    errorElement: 'span',--}}
-{{--                    errorPlacement: function (error, element) {--}}
-{{--                        error.addClass('invalid-feedback');--}}
-{{--                        element.closest('.form-group').append(error);--}}
-{{--                    },--}}
-{{--                    highlight: function (element, errorClass, validClass) {--}}
-{{--                        $(element).addClass('is-invalid');--}}
-{{--                    },--}}
-{{--                    unhighlight: function (element, errorClass, validClass) {--}}
-{{--                        $(element).removeClass('is-invalid');--}}
-{{--                    }--}}
-{{--                });--}}
-{{--            });--}}
-{{--        </script>--}}
+                    },
+                    errorElement: 'span',
+                    errorPlacement: function (error, element) {
+                        error.addClass('invalid-feedback');
+                        element.closest('.form-group').append(error);
+                    },
+                    highlight: function (element, errorClass, validClass) {
+                        $(element).addClass('is-invalid');
+                    },
+                    unhighlight: function (element, errorClass, validClass) {
+                        $(element).removeClass('is-invalid');
+                    }
+                });
+            });
+        </script>
 @endsection
