@@ -106,6 +106,15 @@ Route::group(['middleware'=>'auth'], function (){
         Route::get('/delete/{id}', 'Backend\ColorController@delete')->name('colors.delete');
     });
 
+    Route::prefix('sizes')->group(function (){
+        Route::get('/view', 'Backend\ProductSizeController@view')->name('sizes.view');
+        Route::get('/add', 'Backend\ProductSizeController@add')->name('sizes.add');
+        Route::post('/store', 'Backend\ProductSizeController@store')->name('sizes.store');
+        Route::get('/edit/{id}', 'Backend\ProductSizeController@edit')->name('sizes.edit');
+        Route::post('/update/{id}', 'Backend\ProductSizeController@update')->name('sizes.update');
+        Route::get('/delete/{id}', 'Backend\ProductSizeController@delete')->name('sizes.delete');
+    });
+
 
 });
 
