@@ -19,22 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Finetuning Finished Part 1">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/shopping-cart.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Finetuning Finished Part 1.Closes #1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/slider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/about-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/about-us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/contact-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/contact-us.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/mission.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/news-event-details.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/news-events.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/vision.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MissionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/NewsEventController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ServiceController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/VisionController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mission.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/NewsEvent.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Service.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Vision.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_05_132929_create_missions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_05_140451_create_visions_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_05_143210_create_news_events_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_06_064046_create_services_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/mission/add-mission.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/mission/edit-mission.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/mission/view-mission.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/newsevent/add-news-event.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/newsevent/edit-news-event.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/newsevent/view-news-event.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/service/add-service.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/service/edit-service.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/service/view-service.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/vision/add-vision.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/vision/edit-vision.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/vision/view-vision.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +200,7 @@
       <workItem from="1602087190694" duration="17093000" />
       <workItem from="1602182811788" duration="9000" />
       <workItem from="1602184545058" duration="3761000" />
-      <workItem from="1602219505139" duration="923000" />
+      <workItem from="1602219505139" duration="2076000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -289,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602185202901</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finetuning Finished Part 1.Closes #1">
+      <created>1602220483884</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602220483884</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,13 +330,14 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Finetuning Finished Part 1. Closes #1" />
     <MESSAGE value="Finetuning Finished Part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finetuning Finished Part 1" />
+    <MESSAGE value="Finetuning Finished Part 1.Closes #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finetuning Finished Part 1.Closes #1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602185209049">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602220487290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602185209049" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602220487290" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
