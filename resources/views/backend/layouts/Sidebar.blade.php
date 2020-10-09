@@ -83,81 +83,12 @@
                                     <p>View Slider</p>
                                 </a>
                             </li>
-
-
-                </ul>
-            <li class="nav-item has-treeview {{($prefix=='/missions')?'menu-open':''}}">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-copy"></i>
-                    <p>
-                        Mission Management
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="{{route('missions.view')}}" class="nav-link {{($route=='missions.view')?'active':''}}">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>View Mission</p>
-                        </a>
+                      </ul>
                     </li>
 
 
-                </ul>
-            </li>
-            <li class="nav-item" has-treeview {{($prefix=='/visions')?'menu-open':''}}>
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-copy"></i>
-                    <p>
-                        Vision Management
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="{{route('visions.view')}}" class="nav-link {{($route=='visions.view')?'active':''}}">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>View Vision</p>
-                        </a>
-                    </li>
 
 
-                </ul>
-            </li>
-            <li class="nav-item has-treeview {{($prefix=='/news_events')?'menu-open':''}}">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-copy"></i>
-                    <p>
-                        News and Events Management
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="{{route('news_events.view')}}" class="nav-link {{($route=='news_events.view')?'active':''}}">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>View News and Events</p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item has-treeview {{($prefix=='/services')?'menu-open':''}}">
-                <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-copy"></i>
-                    <p>
-                        Service Management
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="{{route('services.view')}}" class="nav-link {{($route=='services.view')?'active':''}}">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>View Services</p>
-                        </a>
-                    </li>
-                </ul>
-            </li>
             <li class="nav-item has-treeview {{($prefix=='/contacts')?'menu-open':''}}">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-copy"></i>

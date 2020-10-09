@@ -1,34 +1,60 @@
-@php
-    $count=0;
-@endphp
-<!-- Slider Section -->
-<section class="slider_part">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            @foreach($sliders as $key => $slider)
-                <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" class="@if($count==0){active} @endif"></li>
-            @endforeach
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            @foreach($sliders as $slider)
-            <div class="carousel-item @if($count==0){ active } @endif" style="background-image: url({{asset('public/upload/slider_images/'.$slider->image)}})">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-4">{{$slider->short_title}}</h2>
-                    <p class="lead">{{$slider->long_title}}</p>
+<!-- Slider -->
+<section class="section-slide">
+    <div class="wrap-slick1">
+        <div class="slick1">
+            <div class="item-slick1" style="background-image: url(public/frontend/images/slider/slider-1.jpg);">
+                <div class="container h-full">
+                    <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                        <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
+								<span class="ltext-101 cl2 respon2">
+									Dummy text
+								</span>
+                        </div>
+
+                        <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+                            <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                Long dummy text
+                            </h2>
+                        </div>
+                    </div>
                 </div>
             </div>
-                @php
-                    $count++;
-                @endphp
-            @endforeach
+
+            <div class="item-slick1" style="background-image: url(public/frontend/images/slider/slider-2.jpg);">
+                <div class="container h-full">
+                    <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                        <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
+								<span class="ltext-101 cl2 respon2">
+									Dummy text2
+								</span>
+                        </div>
+
+                        <div class="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay="800">
+                            <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                Long dummy text2
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-slick1" style="background-image: url(public/frontend/images/slider/slider-3.jpg);">
+                <div class="container h-full">
+                    <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
+                        <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
+								<span class="ltext-101 cl2 respon2">
+									Dummy text3
+								</span>
+                        </div>
+
+                        <div class="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay="800">
+                            <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                                Long dummy text3
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </section>

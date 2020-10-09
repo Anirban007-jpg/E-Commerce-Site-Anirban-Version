@@ -1,8 +1,10 @@
 @extends('frontend.layouts.master')
 @section('content')
-    <!-- Banner Section -->
-    <section class="banner_part">
-        <img src="{{asset('public/frontend/image/banner.jpg')}}" style="width: 100%">
+    <!-- Title page -->
+    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('public/frontend/images/bg-01.jpg');">
+        <h2 class="ltext-105 cl0 txt-center">
+            About Us
+        </h2>
     </section>
 
     <!-- About us Section -->

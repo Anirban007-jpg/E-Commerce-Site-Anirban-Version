@@ -14,10 +14,7 @@
 Route::get('/', 'Frontend\FrontendController@index')->name('/home');
 Route::get('/about-us', 'Frontend\FrontendController@aboutUs')->name('about.us');
 Route::get('/contact-us', 'Frontend\FrontendController@contactUs')->name('contact.us');
-Route::get('/news-events/details/{id}', 'Frontend\FrontendController@newsDetails')->name('news.event.details');
-Route::get('/our/mission', 'Frontend\FrontendController@mission')->name('our.mission');
-Route::get('/our/vision', 'Frontend\FrontendController@vision')->name('our.vision');
-Route::get('/our/news/events', 'Frontend\FrontendController@news')->name('our.news.event');
+Route::get('/shopping/cart', 'Frontend\FrontendController@ShoppingCart')->name('shopping.cart');
 Route::post('/contact/store', 'Frontend\FrontendController@store')->name('contact.store');
 
 Auth::routes();
