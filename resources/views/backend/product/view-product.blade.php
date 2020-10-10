@@ -49,11 +49,11 @@
                                     <tr class="{{$product->id}}">
                                         <td>{{$key+1}}</td>
                                         {{--                                        <td><img src="{{!empty($slider->image)?url('public/upload/slider_images/'. $slider->image): url('public/upload/noimage.png')}}" width="120px" height="130px"></td>--}}
-                                        <td>{{$product->category_id}}</td>
-                                        <td>{{$product->brand_id}}</td>
+                                        <td>{{$product['category']['name']}}</td>
+                                        <td>{{$product['brand']['name']}}</td>
                                         <td>{{$product->name}}</td>
                                         <td>{{$product->price}}</td>
-                                        <td><img src="">{{$product->image}}</td>
+                                        <td><img src="{{!empty($product->image)?url('public/upload/product_images/' . $product->image):url('public/upload/noimage.png')}}" style="width: 110px; height: 115px;">{{$product->image}}</td>
                                         <td>
                                             <a title='Edit' class="btn btn-sm btn-primary" href="{{route('products.edit', $product->id)}}"><i class="fa fa-edit"></i> </a>
                                             <a title='Delete' id='delete' class="btn btn-sm btn-danger" href="{{route('products.delete', $product->id)}}"><i class="fa fa-trash"></i> </a>
