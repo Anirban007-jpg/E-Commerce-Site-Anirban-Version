@@ -19,19 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #8">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101028Administratordb.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101028Annotation 2020-06-13 143844.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/product/product-details.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/ProductColor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductColor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/ProductSize.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductSize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/ProductSubImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductSubImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/product/view-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/view-product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/color/view-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/color/view-color.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/size/view-product-size.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/size/view-product-size.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +180,7 @@
       <workItem from="1602184545058" duration="3761000" />
       <workItem from="1602219505139" duration="18423000" />
       <workItem from="1602251524045" duration="5908000" />
-      <workItem from="1602314043912" duration="8370000" />
+      <workItem from="1602314043912" duration="9054000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -343,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602314728244</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Closes #9">
+      <created>1602328247460</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602328247460</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +374,8 @@
     <MESSAGE value="Size Management done. Closes #6" />
     <MESSAGE value="Closes #7" />
     <MESSAGE value="Closes #8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #8" />
+    <MESSAGE value="Closes #9" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #9" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602327568982">
@@ -385,10 +386,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602239344972" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602314734257">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602328252560">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602314734257" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602328252560" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

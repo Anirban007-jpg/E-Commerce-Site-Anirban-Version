@@ -42,15 +42,19 @@
                                 </thead>
                                 <tbody>
                                 @foreach($allData as $key => $category)
+                                    @php
+                                        $count = App\Model\Product::where('category_id', $category->id)->count();
+                                    @endphp
                                     <tr class="{{$category->id}}">
                                         <td>{{$key+1}}</td>
                                         {{--                                        <td><img src="{{!empty($slider->image)?url('public/upload/slider_images/'. $slider->image): url('public/upload/noimage.png')}}" width="120px" height="130px"></td>--}}
                                         <td>{{$category->name}}</td>
                                         <td>
                                             <a title='Edit' class="btn btn-sm btn-primary" href="{{route('categories.edit', $category->id)}}"><i class="fa fa-edit"></i> </a>
+                                            @if($count<1)
                                             <a title='Delete' id='delete' class="btn btn-sm btn-danger" href="{{route('categories.delete', $category->id)}}"><i class="fa fa-trash"></i> </a>
+                                            @endif
                                         </td>
-
                                     </tr>
                                 @endforeach
                                 </tbody>
