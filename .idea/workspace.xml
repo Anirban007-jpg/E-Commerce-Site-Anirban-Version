@@ -19,12 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #9">
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #10">
+      <change afterPath="$PROJECT_DIR$/public/upload/logo_images/202010101251logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010101250product-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010101419product-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010101528product-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010101531product-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010101537product-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101250product-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101250product-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101250product-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101419product-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101419product-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101419product-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101419product-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101528product-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101528product-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101528product-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101528product-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101531product-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101531product-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101531product-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/slider_images/202010101355slider-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/slider_images/202010101357slider-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/slider_images/202010101357slider-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/brand/view-brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/view-category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/color/view-color.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/color/view-color.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/size/view-product-size.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/size/view-product-size.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_09_102955_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_09_102955_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/slider.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +167,7 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iYarpLw1hqiB6KyyBa1iZrli4c" />
@@ -180,7 +211,7 @@
       <workItem from="1602184545058" duration="3761000" />
       <workItem from="1602219505139" duration="18423000" />
       <workItem from="1602251524045" duration="5908000" />
-      <workItem from="1602314043912" duration="9054000" />
+      <workItem from="1602314043912" duration="17732000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -343,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602328247460</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Closes #10">
+      <created>1602328904304</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1602328904304</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +413,8 @@
     <MESSAGE value="Closes #7" />
     <MESSAGE value="Closes #8" />
     <MESSAGE value="Closes #9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #9" />
+    <MESSAGE value="Closes #10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #10" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602327568982">
@@ -386,10 +425,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602239344972" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602328252560">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602328907658">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602328252560" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602328907658" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

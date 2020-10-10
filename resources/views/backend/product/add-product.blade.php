@@ -93,20 +93,20 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="">Short Description:</label>
-                                <textarea name="short_desc" class="form-control" rows="1">{{$editData->short_desc}}</textarea>
+                                <textarea name="short_desc" class="form-control" rows="1">{{@$editData->short_desc}}</textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="">Long Description:</label>
-                                <textarea name="long_desc" class="form-control" rows="5">{{$editData->long_desc}}</textarea>
+                                <textarea name="long_desc" class="form-control" rows="5">{{@$editData->long_desc}}</textarea>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="">Price:</label>
-                                <input type="number" name="price" class="form-control" value="{{$editData->price}}">
+                                <input type="number" name="price" class="form-control" value="{{@$editData->price}}">
                             </div>
 
                             <div class="form-group col-md-3">

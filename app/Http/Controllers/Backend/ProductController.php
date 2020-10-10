@@ -43,6 +43,7 @@ class ProductController extends Controller
             $product->category_id= $req->category_id;
             $product->brand_id= $req->brand_id;
             $product->name= $req->name;
+            $product->slug = str_slug($req->name);
             $product->short_desc= $req->short_desc;
             $product->long_desc= $req->long_desc;
             $product->price= $req->price;
@@ -118,6 +119,7 @@ class ProductController extends Controller
             $product->category_id= $req->category_id;
             $product->brand_id= $req->brand_id;
             $product->name= $req->name;
+            $product->slug = str_slug($req->name);
             $product->short_desc= $req->short_desc;
             $product->long_desc= $req->long_desc;
             $product->price= $req->price;
