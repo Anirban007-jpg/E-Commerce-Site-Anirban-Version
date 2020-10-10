@@ -56,6 +56,7 @@
                                         <td><img src="{{!empty($product->image)?url('public/upload/product_images/' . $product->image):url('public/upload/noimage.png')}}" style="width: 110px; height: 115px;">{{$product->image}}</td>
                                         <td>
                                             <a title='Edit' class="btn btn-sm btn-primary" href="{{route('products.edit', $product->id)}}"><i class="fa fa-edit"></i> </a>
+                                            <a title='Details' class="btn btn-sm btn-success" href="{{route('products.details', $product->id)}}"><i class="fa fa-eye"></i> </a>
                                             <a title='Delete' id='delete' class="btn btn-sm btn-danger" href="{{route('products.delete', $product->id)}}"><i class="fa fa-trash"></i> </a>
                                         </td>
 

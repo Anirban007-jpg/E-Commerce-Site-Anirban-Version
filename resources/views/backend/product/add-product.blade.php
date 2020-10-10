@@ -49,7 +49,7 @@
                                 <select name="category_id" class="form-control">
                                 <option value="">Select Category</option>
                                     @foreach($categories as $category)
-                                        <option value="{{$category->id}}">{{$category->name}}</option>
+                                        <option value="{{$category->id}}" {{(@$editData->category_id==$category->id)?"selected":""}}>{{$category->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -59,7 +59,7 @@
                                 <select name="brand_id" class="form-control">
                                     <option value="">Select Brand</option>
                                     @foreach($brands as $brand)
-                                        <option value="{{$brand->id}}">{{$brand->name}}</option>
+                                        <option value="{{$brand->id}}" {{(@$editData->brand_id==$brand->id)?"selected":""}}>{{$brand->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -76,7 +76,7 @@
                                 <label for="">Color:</label>
                                 <select name="color_id[]" class="form-control select2" multiple>
                                     @foreach($color as $co)
-                                        <option value="{{$co->id}}">{{$co->name}}</option>
+                                        <option value="{{$co->id}}" {{(@in_array(['color_id'=>$co->id], $colorarr))?"selected":""}}>{{$co->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -85,7 +85,7 @@
                                 <label for="size_id">Size:</label>
                                 <select name="size_id[]" class="form-control select2" multiple>
                                     @foreach($sizes as $size)
-                                        <option value="{{$size->id}}">{{$size->name}}</option>
+                                        <option value="{{$size->id}}" {{(@in_array(['size_id'=>$size->id], $sizearr))?"selected":""}}>{{$size->name}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -93,20 +93,20 @@
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="">Short Description:</label>
-                                <textarea name="short_desc" class="form-control" rows="1"></textarea>
+                                <textarea name="short_desc" class="form-control" rows="1">{{$editData->short_desc}}</textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="">Long Description:</label>
-                                <textarea name="long_desc" class="form-control" rows="5"></textarea>
+                                <textarea name="long_desc" class="form-control" rows="5">{{$editData->long_desc}}</textarea>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label for="">Price:</label>
-                                <input type="number" name="price" class="form-control">
+                                <input type="number" name="price" class="form-control" value="{{$editData->price}}">
                             </div>
 
                             <div class="form-group col-md-3">

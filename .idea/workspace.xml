@@ -19,28 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #7">
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091635Annotation 2020-06-13 143844.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091636Annotation 2020-06-13 143844.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091637Administratordb.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091637Annotation 2020-06-13 143844.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091639Administratordb.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091640Administratordb.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/product_images/202010091642Administratordb.JPG" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #8">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101028Administratordb.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010101028Annotation 2020-06-13 143844.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/product/product-details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/backend/plugins/select2/css/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/backend/plugins/select2/css/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/mission_images/202010051348mission.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/mission_images/202010051350mission.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/mission_images/202010051351mission.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/mission_images/202010051352mission.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/news_event_images/202010051529news1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/news_event_images/202010060625news2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/news_event_images/202010060625news3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload/vision_images/202010051414vision.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/ProductColor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductColor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/ProductSize.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductSize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/ProductSubImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ProductSubImage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/add-product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/product/view-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/product/view-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +187,7 @@
       <workItem from="1602184545058" duration="3761000" />
       <workItem from="1602219505139" duration="18423000" />
       <workItem from="1602251524045" duration="5908000" />
-      <workItem from="1602314043912" duration="325000" />
+      <workItem from="1602314043912" duration="8370000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -345,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602241359540</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Closes #8">
+      <created>1602314728244</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1602314728244</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,25 +373,30 @@
     <MESSAGE value="Color Management done. Closes #5" />
     <MESSAGE value="Size Management done. Closes #6" />
     <MESSAGE value="Closes #7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #7" />
+    <MESSAGE value="Closes #8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #8" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602327568982">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602327568982" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602239344972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602239344972" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602241363288">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602314734257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602241363288" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602314734257" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602087234284" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1602261844967">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1602326846240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602261844967" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602326846240" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602252156051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
