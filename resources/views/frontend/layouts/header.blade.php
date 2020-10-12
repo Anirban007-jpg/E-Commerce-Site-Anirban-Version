@@ -40,7 +40,7 @@
                         <li class="active-menu">
                             <a href="#">SHOPS</a>
                             <ul class="sub-menu">
-                                <li><a href="">Products</a></li>
+                                <li><a href="{{route('product.list')}}">Products</a></li>
                                 <li><a href="">Checkout</a></li>
                                 <li><a href="{{route('shopping.cart')}}">Cart</a></li>
                             </ul>
@@ -117,7 +117,7 @@
             <li>
                 <a href="">SHOPS</a>
                 <ul class="sub-menu-m">
-                    <li><a href="">Products</a></li>
+                    <li><a href="{{route('product.list')}}">Products</a></li>
                     <li><a href="">Checkout</a></li>
                     <li><a href="{{route('shopping.cart')}}">Cart</a></li>
                 </ul>

@@ -48,7 +48,32 @@ class FrontendController extends Controller
         return view('frontend.single_pages.shopping-cart', $data);
     }
 
+    public function productlist(){
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        $data['categories']=Product::select('category_id')->groupBy('category_id')->get();
+        $data['brands']=Product::select('brand_id')->groupBy('brand_id')->get();
+        $data['products']=Product::orderBy('id','desc')->paginate(5);
+        return view('frontend.single_pages.product-list', $data);
+    }
 
+    public function categorywiseproduct($category_id){
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        $data['categories']=Product::select('category_id')->groupBy('category_id')->get();
+        $data['brands']=Product::select('brand_id')->groupBy('brand_id')->get();
+        $data['products']=Product::where('category_id',$category_id)->orderBy('id','desc')->get();
+        return view('frontend.single_pages.category-wise-product', $data);
+    }
+
+    public function brandwiseproduct($brand_id){
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        $data['categories']=Product::select('category_id')->groupBy('category_id')->get();
+        $data['brands']=Product::select('brand_id')->groupBy('brand_id')->get();
+        $data['products']=Product::where('brand_id',$brand_id)->orderBy('id','desc')->get();
+        return view('frontend.single_pages.Brand-wise-product', $data);
+    }
 
     public function store(Request $req){
         $contact = new Communicator();

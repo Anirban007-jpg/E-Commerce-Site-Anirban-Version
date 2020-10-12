@@ -1,7 +1,12 @@
 @extends('frontend.layouts.master')
 @section('content')
-    @include('frontend.layouts.slider')
-    <!-- Product -->
+    <!-- Title page -->
+    <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('../public/frontend/images/bg-01.jpg');">
+        <h2 class="ltext-105 cl0 txt-center">
+            Category Wise List
+        </h2>
+    </section>
+
     <section class="bg0 p-t-23 p-b-140">
         <div class="container">
             <div class="flex-w flex-sb-m p-b-52">
@@ -10,7 +15,7 @@
                     <a class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" href="{{route('product.list')}}">All Products</a>
 
                     @foreach($categories as $category)
-                    <a class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" href="{{route('category.wise.product',$category->category_id)}}">{{$category['category']['name']}}</a>
+                        <a class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" href="{{route('category.wise.product',$category->category_id)}}">{{$category['category']['name']}}</a>
                     @endforeach
                 </div>
 
@@ -48,9 +53,9 @@
                             </div>
                             <div style="padding: 0px 20px 20px 20px;">
                                 @foreach($brands as $brand)
-                                <a class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" href="{{route('brand.wise.product', $brand->brand_id)}}" class="filter-link stext-106 trans-04" style="color: #fff">
-                                    {{$brand['brand']['name']}}
-                                </a>
+                                    <a class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" href="{{route('brand.wise.product', $brand->brand_id)}}" class="filter-link stext-106 trans-04" style="color: #fff">
+                                        {{$brand['brand']['name']}}
+                                    </a>
                                 @endforeach
                             </div>
                         </div>
@@ -60,37 +65,37 @@
 
             <div class="row isotope-grid">
                 @foreach($products as $product)
-                <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
-                    <!-- Block2 -->
-                    <div class="block2">
-                        <div class="block2-pic hov-img0">
-                            <img src="{{url('public/upload/product_images/'.$product->image)}}" alt="IMG-PRODUCT">
+                    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+                        <!-- Block2 -->
+                        <div class="block2">
+                            <div class="block2-pic hov-img0">
+                                <img src="{{url('public/upload/product_images/'.$product->image)}}" alt="IMG-PRODUCT">
 
-                            <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-                                Add to Card
-                            </a>
-                        </div>
-
-                        <div class="block2-txt flex-w flex-t p-t-14">
-                            <div class="block2-txt-child1 flex-col-l ">
-                                <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                    {{$product->name}}
+                                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                                    Add to Card
                                 </a>
-
-                                <span class="stext-105 cl3">
-									Rs {{$product->price}}
-								</span>
                             </div>
 
+                            <div class="block2-txt flex-w flex-t p-t-14">
+                                <div class="block2-txt-child1 flex-col-l ">
+                                    <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                        {{$product->name}}
+                                    </a>
+
+                                    <span class="stext-105 cl3">
+									Rs {{$product->price}}
+								</span>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
 
             </div>
-            {{$products->links()}}
+
 
         </div>
     </section>
-@endsection
 
+@endsection
