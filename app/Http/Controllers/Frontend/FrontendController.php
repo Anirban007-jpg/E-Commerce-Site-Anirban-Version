@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Model\Brand;
 use App\Model\Category;
 use App\Model\Product;
+use App\Model\ProductColor;
+use App\Model\ProductSize;
+use App\Model\ProductSubImage;
 use Illuminate\Http\Request;
 use App\Model\Logo;
 use App\Model\Slider;
@@ -20,7 +23,7 @@ class FrontendController extends Controller
         $data['logo']=Logo::first();
         $data['sliders']=Slider::all();
         $data['contact']=Contact::first();
-        $data['products']=Product::orderBy('id','desc')->paginate(3);
+        $data['products']=Product::orderBy('id','desc')->paginate(5);
         $data['categories']=Product::select('category_id')->groupBy('category_id')->get();
         $data['brands']=Product::select('brand_id')->groupBy('brand_id')->get();
         return view('frontend.layouts.home', $data);
@@ -75,6 +78,15 @@ class FrontendController extends Controller
         return view('frontend.single_pages.Brand-wise-product', $data);
     }
 
+    public function productdetails($slug){
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        $data['product']=Product::where('slug',$slug)->first();
+        $data['product_sub_images'] = ProductSubImage::where('product_id', $data['product']->id)->get();
+        $data['product_colors'] = ProductColor::where('product_id', $data['product']->id)->get();
+        $data['product_sizes'] = ProductSize::where('product_id', $data['product']->id)->get();
+        return view('frontend.single_pages.product-info', $data);
+    }
     public function store(Request $req){
         $contact = new Communicator();
         $contact->name = $req->name;

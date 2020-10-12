@@ -19,14 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #11">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/Brand-wise-product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/category-wise-product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-list.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #12">
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010120757banner-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010120757banner-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010120757banner-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/upload/product_images/product_sub_images/202010120757banner-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-info.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/Brand-wise-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/Brand-wise-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/category-wise-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/category-wise-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +189,7 @@
       <workItem from="1602219505139" duration="18423000" />
       <workItem from="1602251524045" duration="5908000" />
       <workItem from="1602314043912" duration="18511000" />
-      <workItem from="1602480632771" duration="2585000" />
+      <workItem from="1602480632771" duration="7136000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -362,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602345573028</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Closes #12">
+      <created>1602486476986</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1602486476986</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +407,8 @@
     <MESSAGE value="Closes #9" />
     <MESSAGE value="Closes #10" />
     <MESSAGE value="Closes #11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #11" />
+    <MESSAGE value="Closes #12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602327568982">
@@ -407,10 +419,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602239344972" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602345578400">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602486484666">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602345578400" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602486484666" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602486456796">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1602486456796" />
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602087234284">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

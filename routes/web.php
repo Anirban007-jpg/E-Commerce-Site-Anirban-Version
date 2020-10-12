@@ -19,7 +19,7 @@ Route::post('/contact/store', 'Frontend\FrontendController@store')->name('contac
 Route::get('/product-list', 'Frontend\FrontendController@productlist')->name('product.list');
 Route::get('/product-category/{category_id}', 'Frontend\FrontendController@categorywiseproduct')->name('category.wise.product');
 Route::get('/product-brand/{brand_id}', 'Frontend\FrontendController@brandwiseproduct')->name('brand.wise.product');
-
+Route::get('/product-details/{slug}', 'Frontend\FrontendController@productdetails')->name('product.details.info');
 
 Auth::routes();
 
