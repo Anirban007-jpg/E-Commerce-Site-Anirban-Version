@@ -19,16 +19,20 @@
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend')}}/vendor/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend')}}/css/util.css">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend')}}/css/main.css">
+    <script src="{{asset('public/frontend')}}/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+    <script type="text/css">
+        .notifyjs-corner{
+            z-index: 10000 !important;
+        }
+        </script>
+
 </head>
 <body class="animsition">
 
 @include('frontend.layouts.header')
 @yield('content')
 @include('frontend.layouts.footer')
-
-
-
-
 <!-- Back to top -->
 <div class="btn-back-to-top" id="myBtn">
 		<span class="symbol-btn-back-to-top">
@@ -169,7 +173,7 @@
     </div>
 </div>
 
-<script src="{{asset('public/frontend')}}/vendor/jquery/jquery-3.2.1.min.js"></script>
+
 <script src="{{asset('public/frontend')}}/vendor/animsition/js/animsition.min.js"></script>
 <script src="{{asset('public/frontend')}}/vendor/bootstrap/js/popper.js"></script>
 <script src="{{asset('public/frontend')}}/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -258,6 +262,19 @@
     });
 </script>
 <script src="{{asset('public/frontend')}}/js/main.js"></script>
-
+    @if(session()->has('success'))
+        <script type="text/javascript">
+            $(function (){
+                $.notify("{{session()->get('success')}}", {globalPosition:'top right', className: 'success'});
+            });
+        </script>
+    @endif
+    @if(session()->has('error'))
+        <script type="text/javascript">
+            $(function (){
+                $.notify("{{session()->get('error')}}", {globalPosition:'top right', className: 'success'});
+            });
+        </script>
+    @endif
 </body>
 </html>
