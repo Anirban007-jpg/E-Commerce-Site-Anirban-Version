@@ -43,8 +43,8 @@
                                 <label for="usertype">User Role</label>
                                 <select name="usertype" id="usertype" class="form-control">
                                     <option value="">Select Role</option>
-                                    <option value="Admin">ADMIN</option>
-                                    <option value="User">USER</option>
+                                    <option value="admin">ADMIN</option>
+                                    <option value="customer">CUSTOMER</option>
                                 </select>
                                 <span style=" color : red ">{{($errors->has('usertype'))?($errors->first('usertype')):''}}
                                 </span>

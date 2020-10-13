@@ -44,8 +44,8 @@
                                 <label for="usertype">User Role</label>
                                 <select name="usertype" id="usertype" class="form-control">
                                     <option value="">Select Role</option>
-                                    <option value="Admin" {{($editData->usertype=="Admin")?"selected":""}}>ADMIN</option>
-                                    <option value="User" {{($editData->usertype=="User")?"selected":""}}>USER</option>
+                                    <option value="admin" {{($editData->usertype=="admin")?"selected":""}}>ADMIN</option>
+                                    <option value="customer" {{($editData->usertype=="customer")?"selected":""}}>CUSTOMER</option>
                                 </select>
                                 {{--                                <span style=" color : red ">{{($errors->has('usertype'))?($errors->first('usertype')):''}}--}}
                                 {{--                                </span>--}}

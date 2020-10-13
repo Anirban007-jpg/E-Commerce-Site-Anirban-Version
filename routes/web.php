@@ -28,7 +28,7 @@ Route::get('/show-cart','Frontend\CartController@showCart')->name('cart.show');
 Route::post('/update-cart','Frontend\CartController@updateCart')->name('cart.update');
 Route::get('/delete-cart/{rowId}','Frontend\CartController@deleteCart')->name('cart.delete');
 
-//Customer DashBoard
+
 Route::get('/customer-login','Frontend\CheckOutController@login')->name('customer.login');
 Route::get('/customer-signup','Frontend\CheckOutController@signup')->name('customer.signup');
 Route::post('/customer-signup-store','Frontend\CheckOutController@signupStore')->name('customer.signup.store');
@@ -37,10 +37,15 @@ Route::post('/verify-store','Frontend\CheckOutController@verifyStore')->name('ve
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Customer Dashboard
+Route::group(['middleware'=>['auth','customer']], function (){
+    Route::get('/dashboard','Frontend\DashboardController@dashboard')->name('dashboard');
+});
 
 
-Route::group(['middleware'=>'auth'], function (){
+Route::group(['middleware'=>['auth','admin']], function (){
+    //Admin Dashboard
+    Route::get('/home', 'HomeController@index')->name('home');
     Route::prefix('users')->group(function (){
         Route::get('/view', 'Backend\UserController@View')->name('users.view');
         Route::get('/add', 'Backend\UserController@Add')->name('users.add');

@@ -51,10 +51,25 @@
                         <li>
                             <a href="{{route('contact.us')}}">CONTACT US</a>
                         </li>
-
-                        <li><a href="{{route('customer.login')}}">LOGIN</a></li>
-                        <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
-
+                        @if(@Auth::user()->id != NULL)
+                            <li class="active-menu">
+                                <a href="#">ACCOUNTS</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">MY DASHBOARD</a></li>
+                                    <li><a href="">MY PROFILE</a></li>
+                                    <li><a href="">MY ORDERS</a></li>
+                                    <li>
+                                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @else
+                            <li><a href="{{route('customer.login')}}">LOGIN</a></li>
+                            <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+                        @endif
                     </ul>
                 </div>
 
@@ -133,8 +148,25 @@
             <li>
                 <a href="{{route('contact.us')}}">CONTACT US</a>
             </li>
-            <li><a href="{{route('customer.login')}}">LOGIN</a></li>
-            <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+            @if(@Auth::user()->id != NULL)
+                <li class="active-menu">
+                    <a href="#">ACCOUNTS</a>
+                    <ul class="sub-menu">
+                        <li><a href="">MY DASHBOARD</a></li>
+                        <li><a href="">MY PROFILE</a></li>
+                        <li><a href="">MY ORDERS</a></li>
+                        <li>
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            @else
+                <li><a href="{{route('customer.login')}}">LOGIN</a></li>
+                <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+            @endif
         </ul>
     </div>
 </header>
