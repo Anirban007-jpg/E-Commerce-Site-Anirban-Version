@@ -9,7 +9,7 @@ use App\User;
 class UserController extends Controller
 {
     public function View(){
-        $data['allData'] = User::all();
+        $data['allData'] = User::where('usertype', 'admin')->where('status', 1)->get();
         //dd($allData);
         return view('backend.user.view-user', $data);
     }
@@ -21,7 +21,7 @@ class UserController extends Controller
     public function Store(Request $req){
 
         $this->validate($req, [
-            'usertype'=>'required',
+            'role'=>'required',
             'name'=>'required',
             'email'=>'required|unique:users,email',
             'mobile'=>'required|min:10|max:11',
@@ -31,7 +31,8 @@ class UserController extends Controller
         ]);
 
         $data = new User();
-        $data->usertype = $req->usertype;
+        $data->usertype = 'admin';
+        $data->role = $req->role;
         $data->name = $req->name;
         $data->email = $req->email;
         $data->mobile = $req->mobile;
@@ -49,7 +50,7 @@ class UserController extends Controller
 
     public function Update($id, Request $req){
         $data = User::find($id);
-        $data->usertype = $req->usertype;
+        $data->role = $req->role;
         $data->name = $req->name;
         $data->email = $req->email;
         $data->mobile = $req->mobile;

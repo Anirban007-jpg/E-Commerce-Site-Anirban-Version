@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Dashboard</h1>
+                        <h1 class="m-0">Manage Users</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -36,6 +36,7 @@
                                 <thead>
                                 <tr>
                                     <th>SL.</th>
+                                    <th>Usertype</th>
                                     <th>Role</th>
                                     <th>Name</th>
                                     <th>Email</th>
@@ -47,9 +48,9 @@
                                 <tr>
                                     <td>{{$key+1}}</td>
                                     <td>{{$user->usertype}}</td>
+                                    <td>{{$user->role}}</td>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td>{{$user->name}}</td>
                                     <td>
                                         <a title='Edit' class="btn btn-sm btn-primary" href="{{route('users.edit', $user->id)}}"><i class="fa fa-edit"></i> </a>
                                         <a title='Delete' id="delete" class="btn btn-sm btn-danger" href="{{route('users.delete', $user->id)}}"><i class="fa fa-trash"></i> </a>

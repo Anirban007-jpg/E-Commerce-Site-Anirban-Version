@@ -40,11 +40,11 @@
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-2">
-                                <label for="usertype">User Role</label>
-                                <select name="usertype" id="usertype" class="form-control">
+                                <label for="role">User Role</label>
+                                <select name="role" id="role" class="form-control">
                                     <option value="">Select Role</option>
                                     <option value="admin">ADMIN</option>
-                                    <option value="customer">CUSTOMER</option>
+                                    <option value="user">USER</option>
                                 </select>
                                 <span style=" color : red ">{{($errors->has('usertype'))?($errors->first('usertype')):''}}
                                 </span>
@@ -130,10 +130,6 @@
                             required: true,
 
                         },
-                        usertype: {
-                            required: true,
-
-                        },
                         gender: {
                             required: true,
 
@@ -157,10 +153,7 @@
                         },
                     },
                     messages: {
-                        usertype: {
-                            required: "Please enter a user role"
-                        },
-                        name: {
+                       name: {
                             required: "Please enter the name of the user"
                         },
                         gender: {
