@@ -53,6 +53,8 @@
                         </li>
 
                         <li><a href="{{route('customer.login')}}">LOGIN</a></li>
+                        <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+
                     </ul>
                 </div>
 
@@ -132,6 +134,7 @@
                 <a href="{{route('contact.us')}}">CONTACT US</a>
             </li>
             <li><a href="{{route('customer.login')}}">LOGIN</a></li>
+            <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
         </ul>
     </div>
 </header>

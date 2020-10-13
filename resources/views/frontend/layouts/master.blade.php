@@ -209,6 +209,8 @@
 </script>
 <script src="{{asset('public/frontend')}}/vendor/isotope/isotope.pkgd.min.js"></script>
 <script src="{{asset('public/frontend')}}/vendor/sweetalert/sweetalert.min.js"></script>
+<script src="{{asset('public/backend/')}}/plugins/jquery-validation/jquery.validate.min.js"></script>
+
 <script>
     $('.js-addwish-b2').on('click', function(e){
         e.preventDefault();
@@ -272,7 +274,7 @@
     @if(session()->has('error'))
         <script type="text/javascript">
             $(function (){
-                $.notify("{{session()->get('error')}}", {globalPosition:'top right', className: 'success'});
+                $.notify("{{session()->get('error')}}", {globalPosition:'top right', className: 'error'});
             });
         </script>
     @endif

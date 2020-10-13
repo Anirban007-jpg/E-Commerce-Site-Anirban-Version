@@ -169,7 +169,7 @@
                 @if(session()->has('error'))
                 <script type="text/javascript">
                        $(function (){
-                          $.notify("{{session()->get('error')}}", {globalPosition:'top right', className: 'success'});
+                          $.notify("{{session()->get('error')}}", {globalPosition:'top right', className: 'error'});
                        });
                   </script>
                  @endif

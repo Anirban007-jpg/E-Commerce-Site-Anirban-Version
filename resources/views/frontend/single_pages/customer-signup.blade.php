@@ -4,7 +4,7 @@
 
         #login .container #login-row #login-column #login-box {
             max-width: 700px;
-            height: 820px;
+            height: 1020px;
             border: 1px solid #9C9C9C;
             background-color: #EAEAEA;
             margin-bottom: 50px;
@@ -29,7 +29,8 @@
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
+                        <form id="login-form" class="form" action="{{route('customer.signup.store')}}" method="post">
+                            @csrf
                             <div class="form-group">
                                 <label class="text-info"><strong>Full Name:</strong></label><br>
                                 <input type="text" name="name" id="name" class="form-control">
@@ -64,7 +65,7 @@
                                 <input type="password" name="password2" id="password2" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Submit">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Sign Up">
                                 <input type="reset" name="Reset" class="btn btn-danger btn md" value="Reset">
                             </div>
                             <div class="form-group">
@@ -76,4 +77,81 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#login-form').validate({
+                rules: {
+                    name: {
+                        required: true,
+
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                        unique:true
+                    },
+                    mobile: {
+                        required: true,
+                        minlength:10,
+                        maxlength:11,
+                        unique:true
+                    },
+                    address: {
+                        required: true,
+                    },
+                    gender: {
+                        required: true,
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                    password2: {
+                        required: true,
+                        equalTo: '#password',
+                    },
+                },
+                messages: {
+                   name: {
+                        required: "Please enter the full name of the user"
+                    },
+                    email: {
+                        required: "Please enter a email address",
+                        email: "Please enter a <em>vaild</em> email address"
+                    },
+                    mobile: {
+                        required: "Please enter a mobile number",
+                        minlength: "Your mobile number must be greater 10 characters long",
+                        maxlength: "Your mobile number must be less than or equal to 11 characters long"
+                    },
+                    address: {
+                        required: "Please enter a address of the user"
+                    },
+                    gender: {
+                        required: "Please enter a user gender"
+                    },
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 6 characters long"
+                    },
+                    password2 : {
+                        required: 'please enter the confirmed password',
+                        equalTo: 'Confirm password do not match'
+                    }
+
+                },
+                errorElement: 'span',
+                errorPlacement: function (error, element) {
+                    error.addClass('invalid-feedback');
+                    element.closest('.form-group').append(error);
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).addClass('is-invalid');
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).removeClass('is-invalid');
+                }
+            });
+        });
+    </script>
 @endsection

@@ -31,6 +31,9 @@ Route::get('/delete-cart/{rowId}','Frontend\CartController@deleteCart')->name('c
 //Customer DashBoard
 Route::get('/customer-login','Frontend\CheckOutController@login')->name('customer.login');
 Route::get('/customer-signup','Frontend\CheckOutController@signup')->name('customer.signup');
+Route::post('/customer-signup-store','Frontend\CheckOutController@signupStore')->name('customer.signup.store');
+Route::get('/email-verify','Frontend\CheckOutController@emailVerify')->name('email.verify');
+Route::post('/verify-store','Frontend\CheckOutController@verifyStore')->name('verify.store');
 
 Auth::routes();
 
@@ -140,6 +143,12 @@ Route::group(['middleware'=>'auth'], function (){
         Route::get('/details/{id}', 'Backend\ProductController@details')->name('products.details');
     });
 
+    Route::prefix('customers')->group(function (){
+        Route::get('/view', 'Backend\CustomerController@view')->name('customers.view');
+        Route::get('/draft/view', 'Backend\CustomerController@draftview')->name('customers.draft.view');
+        Route::get('/delete/{id}', 'Backend\CustomerController@delete')->name('customers.delete');
+
+    });
 
 });
 

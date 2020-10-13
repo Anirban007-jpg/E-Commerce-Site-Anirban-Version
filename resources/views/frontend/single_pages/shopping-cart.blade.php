@@ -18,16 +18,16 @@
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-xl-12" style="padding-bottom: 30px;">
                     <div class="wrap-table-shopping-cart">
-                        <table class="table-shopping-cart">
+                        <table class="table table-bordered">
                             <tr class="table_head">
-                                <th class="column-1">Product</th>
-                                <th class="column-2"></th>
-                                <th class="column-3">Size</th>
-                                <th class="column-3">Color</th>
-                                <th class="column-4">Price</th>
-                                <th class="column-5">Quantity</th>
-                                <th class="column-6">Total</th>
-                                <th class="column-7">Action</th>
+                                <th>Product</th>
+                                <th>Image</th>
+                                <th>Size</th>
+                                <th>Color</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
                             </tr>
 
                             @php
@@ -36,16 +36,16 @@
                             @endphp
                             @foreach($contents as $content)
                             <tr class="table_row">
-                                <td class="column-1">{{$content->name}}</td>
-                                <td class="column-2">
+                                <td>{{$content->name}}</td>
+                                <td>
                                     <div class="how-itemcart1">
                                         <img src="{{asset('public/upload/product_images/'.$content->options->image)}}" alt="IMG" style="width: 90px; height: 90px">
                                     </div>
                                 </td>
-                                <td class="column-3">{{$content->options->size_name}}</td>
-                                <td class="column-3">{{$content->options->color_name}}</td>
-                                <td class="column-4">{{$content->price}} INR</td>
-                                <td class="column-5">
+                                <td>{$content->options->size_name}}</td>
+                                <td>{{$content->options->color_name}}</td>
+                                <td>{{$content->price}} INR</td>
+                                <td style="width: 200px; min-width: 200px">
                                     <form method="post" action="{{route('cart.update')}}">
                                         @csrf
                                         <div class="wrap-num-product flex-w m-l-auto m-r-0">
@@ -55,8 +55,8 @@
                                         </div>
                                     </form>
                                 </td>
-                                <td class="column-6">{{$content->subtotal}} INR</td>
-                                <td class="column-7"><a class="cart_quantity_delete btn btn-danger" href="{{route('cart.delete',$content->rowId)}}"><i class="fa fa-times"></i> </a> </td>
+                                <td>{{$content->subtotal}} INR</td>
+                                <td><a class="cart_quantity_delete btn btn-danger" href="{{route('cart.delete',$content->rowId)}}"><i class="fa fa-times"></i> </a> </td>
                             </tr>
                                 @php
                                     /** @var TYPE_NAME $total */
