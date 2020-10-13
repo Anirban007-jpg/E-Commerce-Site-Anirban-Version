@@ -28,6 +28,10 @@ Route::get('/show-cart','Frontend\CartController@showCart')->name('cart.show');
 Route::post('/update-cart','Frontend\CartController@updateCart')->name('cart.update');
 Route::get('/delete-cart/{rowId}','Frontend\CartController@deleteCart')->name('cart.delete');
 
+//Customer DashBoard
+Route::get('/customer-login','Frontend\CheckOutController@login')->name('customer.login');
+Route::get('/customer-signup','Frontend\CheckOutController@signup')->name('customer.signup');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
