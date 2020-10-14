@@ -55,8 +55,8 @@
                             <li class="active-menu">
                                 <a href="#">ACCOUNTS</a>
                                 <ul class="sub-menu">
-                                    <li><a href="">MY DASHBOARD</a></li>
-                                    <li><a href="">MY PROFILE</a></li>
+                                    <li><a href="{{route('dashboard')}}">MY PROFILE</a></li>
+                                    <li><a href="{{route('customer.password.change')}}">PASSWORD CHANGE</a></li>
                                     <li><a href="">MY ORDERS</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
@@ -68,7 +68,7 @@
                             </li>
                         @else
                             <li><a href="{{route('customer.login')}}">LOGIN</a></li>
-                            <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+
                         @endif
                     </ul>
                 </div>
@@ -152,8 +152,8 @@
                 <li class="active-menu">
                     <a href="#">ACCOUNTS</a>
                     <ul class="sub-menu">
-                        <li><a href="">MY DASHBOARD</a></li>
-                        <li><a href="">MY PROFILE</a></li>
+                        <li><a href="{{route('dashboard')}}">MY PROFILE</a></li>
+                        <li><a href="{{route('customer.password.change')}}">PASSWORD CHANGE</a></li>
                         <li><a href="">MY ORDERS</a></li>
                         <li>
                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
@@ -165,7 +165,7 @@
                 </li>
             @else
                 <li><a href="{{route('customer.login')}}">LOGIN</a></li>
-                <li><a href="{{url('/login')}}">OLD LOGIN</a></li>
+
             @endif
         </ul>
     </div>

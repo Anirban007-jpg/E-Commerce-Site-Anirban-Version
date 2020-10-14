@@ -85,6 +85,7 @@
                                     <option value="">Select Gender</option>
                                     <option value="Male">MALE</option>
                                     <option value="Female">FEMALE</option>
+                                    <option value="Other">OTHER</option>
                                 </select>
                             </div>
                         </div>

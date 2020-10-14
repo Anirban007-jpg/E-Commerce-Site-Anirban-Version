@@ -86,6 +86,7 @@
                                     <option value="">Select Gender</option>
                                     <option value="Male" {{($editData->gender=="Male")?"selected":""}}>MALE</option>
                                     <option value="Female" {{($editData->gender=="Female")?"selected":""}}>FEMALE</option>
+                                    <option value="Other" {{($editData->gender=="Other")?"selected":""}}>OTHER</option>
                                 </select>
                             </div>
                         </div>
