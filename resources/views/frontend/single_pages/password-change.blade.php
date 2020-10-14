@@ -31,7 +31,7 @@
                     <ul class="prof">
                         <li><a href="{{route('dashboard')}}">My Profile</a></li>
                         <li><a href="{{route('customer.password.change')}}">Password Change</a></li>
-                        <li><a href="">My Orders</a></li>
+                        <li><a href="{{route('customer.order.list')}}">My Orders</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">

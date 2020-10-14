@@ -83,47 +83,57 @@ class DashboardController extends Controller
     }
 
     public function paymentStore(Request $request){
-        $this->validate($request, [
-           'payment_method'=>'required'
-        ]);
-        DB::transaction(function () use($request){
-           $payment = new Payment();
-           $payment->payment_method = $request->payment_method;
-           $payment->transaction_number = $request->transaction_number;
-           $payment->save();
-           $order = new Order();
-           $order->user_id = Auth::user()->id;
-           $order->shipping_id = Session::get('shipping_id');
-           $order->payment_id = $payment->id;
-           $order_data=Order::orderBy('id', 'desc')->first();
-           if ($order_data == null){
-               $firstReg = '0';
-               $order_no = $firstReg + 1;
-           }else{
-               $order_data= Order::orderBy('id','desc')->first()->order_no;
-               $order_no = $order_data + 1;
-           }
-           $order->order_number = $order_no;
-           $order->order_total = $request->order_total;
-           $order->status = '0';
-           $order->save();
-           $contents = Cart::content();
-           foreach ($contents as $content){
-               $orderdetails = new OrderDetail();
-               $orderdetails->order_id = $order->id;
-               $orderdetails->product_id = $content->id;
-               $orderdetails->color_id = $content->options->color_id;
-               $orderdetails->size_id = $content->options->size_id;
-               $orderdetails->quantity = $content->qty;
-               $orderdetails->save();
-           }
-        });
+        if ($request->product_id == NULL){
+            return redirect()->back()->with('message', 'Please add product to continue');
+        }else{
+            $this->validate($request, [
+                'payment_method'=>'required'
+            ]);
+            if($request->payment_method == 'Paytm' && $request->transaction_number == NULL){
+                return redirect()->back()->with('message', 'Please enter your transaction number');
+            }
+            DB::transaction(function () use($request){
+                $payment = new Payment();
+                $payment->payment_method = $request->payment_method;
+                $payment->transaction_number = $request->transaction_number;
+                $payment->save();
+                $order = new Order();
+                $order->user_id = Auth::user()->id;
+                $order->shipping_id = Session::get('shipping_id');
+                $order->payment_id = $payment->id;
+                $order_data=Order::orderBy('id', 'desc')->first();
+                if ($order_data == null){
+                    $firstReg = '0';
+                    $order_number = $firstReg + 1;
+                }else{
+                    $order_data= Order::orderBy('id','desc')->first()->order_number;
+                    $order_no = $order_data + 1;
+                }
+                $order->order_number = $order_number;
+                $order->order_total = $request->order_total;
+                $order->status = '0';
+                $order->save();
+                $contents = Cart::content();
+                foreach ($contents as $content){
+                    $orderdetails = new OrderDetail();
+                    $orderdetails->order_id = $order->id;
+                    $orderdetails->product_id = $content->id;
+                    $orderdetails->color_id = $content->options->color_id;
+                    $orderdetails->size_id = $content->options->size_id;
+                    $orderdetails->quantity = $content->qty;
+                    $orderdetails->save();
+                }
+            });
+        }
         Cart::destroy();
         return redirect()->route('customer.order.list')->with('success', 'Data saved successfully');
     }
 
     public function orderList(){
-        dd('ok');
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        $data['orders']= Order::where('user_id', Auth::user()->id)->get();
+        return view('frontend.single_pages.customer-order', $data);
     }
 
 }
