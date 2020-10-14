@@ -30,12 +30,9 @@
                             <h3>Edit User Profile</h3>
                             <a class="btn btn-success float-right btn-sm" href="{{route('profiles.view')}}"><i class="fa fa-list"></i>Your Profile</a>
                         </div>
-                        <!-- /.card-header -->
                         <div class="card-body">
-
-                        </div><!-- /.card-body -->
+                        </div>
                     </div>
-                    <!-- /.card -->
                     <form method="post" action="{{route('profiles.update')}}" id="myForm" enctype="multipart/form-data">
 
                         @csrf
@@ -99,13 +96,8 @@
                             </div>
                         </div>
                     </form>
-                    <!-- /.card -->
                 </section>
-                <!-- /.Left col -->
-
-                <!-- /.content -->
             </div>
-            <!-- /.content-wrapper -->
         </div>
 
 

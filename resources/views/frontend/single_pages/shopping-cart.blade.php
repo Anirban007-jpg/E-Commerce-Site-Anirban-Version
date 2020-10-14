@@ -42,7 +42,7 @@
                                         <img src="{{asset('public/upload/product_images/'.$content->options->image)}}" alt="IMG" style="width: 90px; height: 90px">
                                     </div>
                                 </td>
-                                <td>{$content->options->size_name}}</td>
+                                <td>{{$content->options->size_name}}</td>
                                 <td>{{$content->options->color_name}}</td>
                                 <td>{{$content->price}} INR</td>
                                 <td style="width: 200px; min-width: 200px">
@@ -96,9 +96,11 @@
                     <div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
                         <div class="flex-w flex-m m-r-20 m-tb-5">
                             <a href="{{route('product.list')}}" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">Continue Shopping</a>
-                            &nbsp;&nbsp;
-
-                            <a href="login-check.html" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">Checkout</a>
+                            @if(@Auth::user()->id != NULL)&nbsp;&nbsp;
+                               <a href="{{route('customer.checkout')}}" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">Checkout</a>
+                            @else
+                                <a href="{{route('customer.login')}}" class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">Checkout</a>
+                            @endif
                         </div>
                     </div>
                 </div>

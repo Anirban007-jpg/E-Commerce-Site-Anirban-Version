@@ -19,17 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #18">
-      <change afterPath="$PROJECT_DIR$/public/upload/user_images/202010140613gallery-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/edit-customer-profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/password-change.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #19">
+      <change afterPath="$PROJECT_DIR$/app/Model/Order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/OrderDetail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Model/Shipping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_073142_create_shippings_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_081057_create_payments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_081114_create_orders_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_081151_create_order_details_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-checkout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-payment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/CheckOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/user/add-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/user/add-user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/user/edit-user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/user/edit-user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/user/edit-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/user/edit-profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/shopping-cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/shopping-cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +197,7 @@
       <workItem from="1602314043912" duration="18511000" />
       <workItem from="1602480632771" duration="19728000" />
       <workItem from="1602566701626" duration="26903000" />
-      <workItem from="1602655451199" duration="2789000" />
+      <workItem from="1602655451199" duration="12692000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -417,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602594596186</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Closes #19">
+      <created>1602658632436</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1602658632436</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +471,8 @@
     <MESSAGE value="Closes #16" />
     <MESSAGE value="Multi Auth finished.Closes #17" />
     <MESSAGE value="Closes #18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #18" />
+    <MESSAGE value="Closes #19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #19" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602509428532">
@@ -469,10 +483,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602592051469" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602594611243">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1602658643013">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602594611243" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602658643013" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602486456796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -481,10 +495,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602087234284" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1602326846240">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1602663317821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602326846240" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1602663317821" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602252156051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

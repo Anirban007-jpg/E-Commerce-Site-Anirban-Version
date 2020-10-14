@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Model\Shipping;
 use Carbon\Carbon;
 use DateTime;
 use Illuminate\Http\Request;
@@ -19,10 +20,12 @@ use App\Model\Slider;
 use App\Model\Contact;
 use App\Model\About;
 use App\Model\Communicator;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Cart;
 use App\User;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class CheckOutController extends Controller
 {
@@ -91,4 +94,29 @@ class CheckOutController extends Controller
         }
 
     }
+
+    public function checkout(){
+        $data['logo']=Logo::first();
+        $data['contact']=Contact::first();
+        return view('frontend.single_pages.customer-checkout', $data);
+    }
+
+    public function checkoutStore(Request $request){
+        $this->validate($request, [
+            'name'=>'required',
+            'mobileno'=>'required',
+            'address'=>'required'
+        ]);
+
+        $checkout = new Shipping();
+        $checkout->name = $request->name;
+        $checkout->email = $request->email;
+        $checkout->mobileno = $request->mobileno;
+        $checkout->address = $request->address;
+        $checkout->user_id = Auth::user()->id;
+        $checkout->save();
+        Session::put('shipping_id', $checkout->id);
+        return redirect()->route('customer.payment')->with('success', 'Your Order is placed successfully...Proceed For payment');
+    }
+
 }

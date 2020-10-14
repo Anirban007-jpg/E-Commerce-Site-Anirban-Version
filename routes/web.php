@@ -34,6 +34,9 @@ Route::get('/customer-signup','Frontend\CheckOutController@signup')->name('custo
 Route::post('/customer-signup-store','Frontend\CheckOutController@signupStore')->name('customer.signup.store');
 Route::get('/email-verify','Frontend\CheckOutController@emailVerify')->name('email.verify');
 Route::post('/verify-store','Frontend\CheckOutController@verifyStore')->name('verify.store');
+Route::get('/checkout','Frontend\CheckOutController@checkout')->name('customer.checkout');
+Route::post('/checkout-store','Frontend\CheckOutController@checkoutStore')->name('customer.checkout.store');
+
 
 Auth::routes();
 
@@ -44,6 +47,9 @@ Route::group(['middleware'=>['auth','customer']], function (){
     Route::post('/customer-update-profile','Frontend\DashboardController@updateProfile')->name('customer.update.profile');
     Route::get('/customer-password-change','Frontend\DashboardController@passwordChange')->name('customer.password.change');
     Route::post('/customer-password-update','Frontend\DashboardController@passwordUpdate')->name('customer.password.update');
+    Route::get('/payment','Frontend\DashboardController@payment')->name('customer.payment');
+    Route::post('/payment/store','Frontend\DashboardController@paymentStore')->name('customer.payment.store');
+    Route::get('/order-list','Frontend\DashboardController@orderList')->name('customer.order.list');
 });
 
 
