@@ -37,6 +37,7 @@
                             <tr>
                                 <th>Order No</th>
                                 <th>Total Amount</th>
+                                <th>Payment Type</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -46,6 +47,12 @@
                                 <tr>
                                     <td># {{$order->order_number}}</td>
                                     <td>{{$order->order_total}}</td>
+                                    <th>
+                                        {{$order['payment']['payment_method']}}
+                                        @if($order['payment']['payment_method']=='Paytm')
+                                            {Transaction no : {{$order['payment']['transaction_number']}}
+                                        @endif
+                                    </th>
                                     <td>
                                         @if($order->status=='0')
                                             <span style="background: #DC4E41; padding: 5px; color: #e6e6e6; font-weight: bolder;">Unapproved</span>
@@ -54,7 +61,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="" class="btn btn-primary btn-sm"><i class="fa fa-eye"> Details</i></a>
+                                        <a href="{{route('customer.order.details', $order->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-eye"> Details</i></a>
                                     </td>
                                 </tr>
                             @endforeach

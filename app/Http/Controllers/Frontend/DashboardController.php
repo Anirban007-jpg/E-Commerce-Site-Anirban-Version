@@ -107,7 +107,7 @@ class DashboardController extends Controller
                     $order_number = $firstReg + 1;
                 }else{
                     $order_data= Order::orderBy('id','desc')->first()->order_number;
-                    $order_no = $order_data + 1;
+                    $order_number = $order_data + 1;
                 }
                 $order->order_number = $order_number;
                 $order->order_total = $request->order_total;
@@ -134,6 +134,20 @@ class DashboardController extends Controller
         $data['contact']=Contact::first();
         $data['orders']= Order::where('user_id', Auth::user()->id)->get();
         return view('frontend.single_pages.customer-order', $data);
+    }
+
+    public function orderDetails($id){
+        $orderData = Order::findOrFail($id);
+        $data['order']= Order::where('id',$orderData->id)->where('user_id', Auth::user()->id)->first();
+        if ($data['order']==false){
+            return redirect()->back()->with('error', 'resource cannot be found');
+        }
+        else {
+            $data['logo'] = Logo::first();
+            $data['contact'] = Contact::first();
+            $data['order'] = Order::with(['orderdetails'])->where('id', $orderData->id)->where('user_id', Auth::user()->id)->first();
+            return view('frontend.single_pages.customer-order-details', $data);
+        }
     }
 
 }

@@ -50,6 +50,7 @@ Route::group(['middleware'=>['auth','customer']], function (){
     Route::get('/payment','Frontend\DashboardController@payment')->name('customer.payment');
     Route::post('/payment/store','Frontend\DashboardController@paymentStore')->name('customer.payment.store');
     Route::get('/order-list','Frontend\DashboardController@orderList')->name('customer.order.list');
+    Route::get('/order-details/{id}','Frontend\DashboardController@orderDetails')->name('customer.order.details');
 });
 
 
