@@ -51,6 +51,7 @@ Route::group(['middleware'=>['auth','customer']], function (){
     Route::post('/payment/store','Frontend\DashboardController@paymentStore')->name('customer.payment.store');
     Route::get('/order-list','Frontend\DashboardController@orderList')->name('customer.order.list');
     Route::get('/order-details/{id}','Frontend\DashboardController@orderDetails')->name('customer.order.details');
+    Route::get('/order-print/{id}','Frontend\DashboardController@orderPrint')->name('customer.order.print');
 });
 
 
@@ -157,6 +158,14 @@ Route::group(['middleware'=>['auth','admin']], function (){
         Route::post('/update/{id}', 'Backend\ProductController@update')->name('products.update');
         Route::get('/delete/{id}', 'Backend\ProductController@delete')->name('products.delete');
         Route::get('/details/{id}', 'Backend\ProductController@details')->name('products.details');
+    });
+
+    Route::prefix('orders')->group(function (){
+        Route::get('/pending/list', 'Backend\OrderController@pending')->name('orders.pending.list');
+        Route::get('/approved/list', 'Backend\OrderController@approved')->name('orders.approved.list');
+        Route::get('/approved/details/list/{id}', 'Backend\OrderController@details')->name('orders.approved.details.list');
+        Route::get('/approved/{id}', 'Backend\OrderController@approveproduct')->name('orders.approved.product');
+        Route::get('/unapproved/{id}', 'Backend\OrderController@unapproveproduct')->name('orders.unapproved.product');
     });
 
     Route::prefix('customers')->group(function (){

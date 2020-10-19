@@ -61,7 +61,8 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{route('customer.order.details', $order->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-eye"> Details</i></a>
+                                        <a title="details" href="{{route('customer.order.details', $order->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                                        <a title="print" target="_blank" href="{{route('customer.order.print', $order->id)}}" class="btn btn-info btn-sm"><i class="fa fa-print"></i></a>
                                     </td>
                                 </tr>
                             @endforeach

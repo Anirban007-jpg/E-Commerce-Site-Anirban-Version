@@ -150,4 +150,17 @@ class DashboardController extends Controller
         }
     }
 
+    public function orderPrint($id){
+        $orderData = Order::findOrFail($id);
+        $data['order']= Order::where('id',$orderData->id)->where('user_id', Auth::user()->id)->first();
+        if ($data['order']==false){
+            return redirect()->back()->with('error', 'resource cannot be found');
+        }
+        else {
+            $data['logo'] = Logo::first();
+            $data['contact'] = Contact::first();
+            $data['order'] = Order::with(['orderdetails'])->where('id', $orderData->id)->where('user_id', Auth::user()->id)->first();
+            return view('frontend.single_pages.customer-order-print', $data);
+        }
+    }
 }
