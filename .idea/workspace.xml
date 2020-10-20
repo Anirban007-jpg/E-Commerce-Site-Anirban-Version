@@ -19,18 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #22">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/approved-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/order-details.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/pending-list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-order-print.blade.php" afterDir="false" />
+    <list default="true" id="3f77e2c4-df78-4c90-bf1d-184e862f7153" name="Default Changelist" comment="Closes #23">
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/find-product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/Sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/customer-order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/Brand-wise-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/Brand-wise-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/category-wise-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/category-wise-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/single_pages/product-list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +192,10 @@
       <workItem from="1602566701626" duration="26903000" />
       <workItem from="1602655451199" duration="16167000" />
       <workItem from="1602871979967" duration="6223000" />
-      <workItem from="1603047270178" duration="6327000" />
+      <workItem from="1603047270178" duration="6639000" />
+      <workItem from="1603132577937" duration="65000" />
+      <workItem from="1603199948586" duration="642000" />
+      <workItem from="1603215081444" duration="3225000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1602087402125</created>
@@ -441,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603048627514</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Closes #23">
+      <created>1603089251567</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1603089251567</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,21 +493,26 @@
     <MESSAGE value="Closes #19" />
     <MESSAGE value="Closes #20" />
     <MESSAGE value="Closes #22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #22" />
+    <MESSAGE value="Closes #23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #23" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1602509428532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602509428532" />
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603199998454">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1603199998454" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602592051469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602592051469" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603048654242">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603089262758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603048654242" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603089262758" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602486456796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

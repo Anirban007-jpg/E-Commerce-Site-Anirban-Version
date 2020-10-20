@@ -20,7 +20,8 @@ Route::get('/product-list', 'Frontend\FrontendController@productlist')->name('pr
 Route::get('/product-category/{category_id}', 'Frontend\FrontendController@categorywiseproduct')->name('category.wise.product');
 Route::get('/product-brand/{brand_id}', 'Frontend\FrontendController@brandwiseproduct')->name('brand.wise.product');
 Route::get('/product-details/{slug}', 'Frontend\FrontendController@productdetails')->name('product.details.info');
-
+Route::post('/find-product', 'Frontend\FrontendController@findProduct')->name('find.product');
+Route::get('/get-product', 'Frontend\FrontendController@getProduct')->name('get.product');
 
 // Shopping Cart Routes
 Route::post('/add-to-cart','Frontend\CartController@addtoCart')->name('cart.add');

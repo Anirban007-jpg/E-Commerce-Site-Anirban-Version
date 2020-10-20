@@ -237,10 +237,19 @@
                     <a href="{{route('cart.show')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
                         View Cart
                     </a>
+                    @if(@Auth::user()->id != NULL && Session::get('shipping_id') == NULL)
                       <a href="{{route('customer.checkout')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
                             Check Out
                       </a>
-
+                    @elseif(@Auth::user()->id != NULL && Session::get('shipping_id') != NULL)
+                        <a href="{{route('customer.payment')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                            Check Out
+                        </a>
+                    @else
+                        <a href="{{route('customer.login')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                            Check Out
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>
